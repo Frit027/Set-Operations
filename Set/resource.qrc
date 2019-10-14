@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/new">
+        <file>textIn.txt</file>
+        <file>textOut.txt</file>
+        <file>MIREA_logo.png</file>
+    </qresource>
+</RCC>

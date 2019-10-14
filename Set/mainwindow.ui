@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1184</width>
+    <height>510</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(219, 253, 249);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>420</y>
+      <width>561</width>
+      <height>62</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QPushButton" name="pushButtonFileIn">
+       <property name="minimumSize">
+        <size>
+         <width>250</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Medium Cond</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(234, 0, 0);
+border-color: rgb(255, 93, 128);
+color: rgb(255, 255, 248);</string>
+       </property>
+       <property name="text">
+        <string>Получить множества из файла</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonFileOut">
+       <property name="minimumSize">
+        <size>
+         <width>250</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Medium Cond</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(234, 0, 0);
+border-color: rgb(255, 93, 128);
+color: rgb(255, 255, 248);</string>
+       </property>
+       <property name="text">
+        <string>Записать множества в файл</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>691</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="labelSet1">
+         <property name="font">
+          <font>
+           <family>Rockwell Condensed</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Первое множество:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditFirst">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(187, 218, 194);
+font: 10pt &quot;Century Gothic&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonAdd">
+         <property name="font">
+          <font>
+           <family>Franklin Gothic Medium Cond</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(179, 132, 245);
+color: rgb(216, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Добавить элемент</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="labelSet2">
+         <property name="font">
+          <font>
+           <family>Rockwell Condensed</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Второе множество:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditSecond">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(187, 218, 194);
+font: 10pt &quot;Century Gothic&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonAddTwo">
+         <property name="font">
+          <font>
+           <family>Franklin Gothic Medium Cond</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(179, 132, 245);
+color: rgb(216, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Добавить элемент</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>360</y>
+      <width>691</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>Rockwell Condensed</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(39, 167, 0);</string>
+       </property>
+       <property name="text">
+        <string>Новое множество:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditRes">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 244, 121);
+font: 10pt &quot;Century Gothic&quot;;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="image">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>160</y>
+      <width>281</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../Pictures/MIREA_logo.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>0</y>
+      <width>401</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButtonUnion">
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Medium Cond</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 253, 220);
+border-top-color: rgb(85, 255, 255);
+border-right-color: rgb(85, 255, 255);
+border-left-color: rgb(85, 255, 255);
+border-color: rgb(152, 255, 247);
+background-color: qlineargradient(spread:pad, x1:0, y1:0.193, x2:1, y2:0, stop:0 rgba(0, 26, 184, 255), stop:1 rgba(255, 255, 255, 255));
+
+</string>
+       </property>
+       <property name="text">
+        <string>Объединение множеств</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonInter">
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Medium Cond</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 253, 220);
+border-top-color: rgb(85, 255, 255);
+border-right-color: rgb(85, 255, 255);
+border-left-color: rgb(85, 255, 255);
+border-color: rgb(152, 255, 247);
+background-color: qlineargradient(spread:pad, x1:0, y1:0.193, x2:1, y2:0, stop:0 rgba(0, 26, 184, 255), stop:1 rgba(255, 255, 255, 255));
+
+</string>
+       </property>
+       <property name="text">
+        <string>Пересечение  множеств</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonSub">
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Medium Cond</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 253, 220);
+border-top-color: rgb(85, 255, 255);
+border-right-color: rgb(85, 255, 255);
+border-left-color: rgb(85, 255, 255);
+border-color: rgb(152, 255, 247);
+background-color: qlineargradient(spread:pad, x1:0, y1:0.193, x2:1, y2:0, stop:0 rgba(0, 26, 184, 255), stop:1 rgba(255, 255, 255, 255));
+
+</string>
+       </property>
+       <property name="text">
+        <string>Разность 1-ого и 2-ого множеств</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonSubTwo">
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Medium Cond</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 253, 220);
+border-top-color: rgb(85, 255, 255);
+border-right-color: rgb(85, 255, 255);
+border-left-color: rgb(85, 255, 255);
+border-color: rgb(152, 255, 247);
+background-color: qlineargradient(spread:pad, x1:0, y1:0.193, x2:1, y2:0, stop:0 rgba(0, 26, 184, 255), stop:1 rgba(255, 255, 255, 255));
+
+</string>
+       </property>
+       <property name="text">
+        <string>Разность 2-ого и 1-ого множеств</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonDelete">
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Medium Cond</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 253, 220);
+border-top-color: rgb(85, 255, 255);
+border-right-color: rgb(85, 255, 255);
+border-left-color: rgb(85, 255, 255);
+border-color: rgb(152, 255, 247);
+background-color: qlineargradient(spread:pad, x1:0, y1:0.193, x2:1, y2:0, stop:0 rgba(0, 26, 184, 255), stop:1 rgba(255, 255, 255, 255));
+
+</string>
+       </property>
+       <property name="text">
+        <string>Удалить элемент из 1-ого множества</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonDeleteTwo">
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Medium Cond</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 253, 220);
+border-top-color: rgb(85, 255, 255);
+border-right-color: rgb(85, 255, 255);
+border-left-color: rgb(85, 255, 255);
+border-color: rgb(152, 255, 247);
+background-color: qlineargradient(spread:pad, x1:0, y1:0.193, x2:1, y2:0, stop:0 rgba(0, 26, 184, 255), stop:1 rgba(255, 255, 255, 255));
+
+</string>
+       </property>
+       <property name="text">
+        <string>Удалить элемент из 2-ого множества</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonEqual">
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Medium Cond</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 253, 220);
+border-top-color: rgb(85, 255, 255);
+border-right-color: rgb(85, 255, 255);
+border-left-color: rgb(85, 255, 255);
+border-color: rgb(152, 255, 247);
+background-color: qlineargradient(spread:pad, x1:0, y1:0.193, x2:1, y2:0, stop:0 rgba(0, 26, 184, 255), stop:1 rgba(255, 255, 255, 255));
+
+</string>
+       </property>
+       <property name="text">
+        <string>Проверить равенство множеств</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonFind">
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Medium Cond</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 253, 220);
+border-top-color: rgb(85, 255, 255);
+border-right-color: rgb(85, 255, 255);
+border-left-color: rgb(85, 255, 255);
+border-color: rgb(152, 255, 247);
+background-color: qlineargradient(spread:pad, x1:0, y1:0.193, x2:1, y2:0, stop:0 rgba(0, 26, 184, 255), stop:1 rgba(255, 255, 255, 255));
+
+</string>
+       </property>
+       <property name="text">
+        <string>Проверить наличие элемента в 1-ом множестве</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonFindTwo">
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Medium Cond</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 253, 220);
+border-top-color: rgb(85, 255, 255);
+border-right-color: rgb(85, 255, 255);
+border-left-color: rgb(85, 255, 255);
+border-color: rgb(152, 255, 247);
+background-color: qlineargradient(spread:pad, x1:0, y1:0.193, x2:1, y2:0, stop:0 rgba(0, 26, 184, 255), stop:1 rgba(255, 255, 255, 255));
+
+</string>
+       </property>
+       <property name="text">
+        <string>Проверить наличие элемента во 2-ом множестве</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>271</x>
+      <y>131</y>
+      <width>292</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QPushButton" name="pushButtonClear">
+       <property name="minimumSize">
+        <size>
+         <width>103</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Medium</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(69, 74, 65);
+color: rgb(228, 255, 250);</string>
+       </property>
+       <property name="text">
+        <string>Очистить поля</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <property name="minimumSize">
+        <size>
+         <width>180</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Medium</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(69, 74, 65);
+color: rgb(228, 255, 250);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Числовой целый тип</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Числовой дробный тип</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cимвольный тип</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Логический тип</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Строковый тип</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
